@@ -1,0 +1,43 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# ---------- Virtual environments ----------
+venv/
+.venv/
+env/
+
+# ---------- PyCharm / editors ----------
+.idea/
+.vscode/
+*.iml
+
+# ---------- Windows / macOS junk ----------
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---------- Secrets (never commit these) ----------
+.env
+*.key
+secrets.*
+
+# ---------- Logs and temp files ----------
+*.log
+*.tmp
+*.bak
+
+# ---------- Raw third-party data (licence restrictions) ----------
+# EM-DAT terms restrict redistribution, so keep the raw download out.
+# Change these names to match the real files in your data/ folder.
+data/emdat*
+data/public_emdat*
+
+# ---------- Large or regenerable files ----------
+# Raw city list, only needed to build state_capitals.csv
+data/ng.csv
+# 8 MB LGA boundaries, not used by the current app.
+# Remove this line if you want them archived in the DOI record.
+data/nigeria_lgas.geojson
